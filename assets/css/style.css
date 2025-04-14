@@ -1,0 +1,81 @@
+body{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    
+    /* bg image */
+    background: url("../images/pexels-ryutaro-6249515.jpg");
+    
+    background-repeat: no-repeat;
+    
+    height:auto;
+    
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+
+
+
+.weatherForm{
+
+    background-color: #69691bb8;
+
+    padding: 10px;
+
+    border-radius: 6px 6px 0 0;
+
+    margin: 20px;
+
+}
+
+.cityInput{
+
+    padding: 10px;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    border: 5px solid #000000;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    width: 300px;
+
+    text-align: center;
+
+}
+
+/* Select all buttons where the attribute equals submit */
+button[type="submit"]{
+
+    padding: 10px 20px;
+
+    font-weight: bold;
+
+    font-size: 2rem;
+
+    background-color: #4e4eb1;
+
+    color: white;
+    
+    /* cityInput and btn shar repeat properties */
+    border: 5px solid black;
+    border-radius: 10px;
+    
+    /* When we hover our cursor over the button */
+    cursor: pointer;
+
+}
+
+button[type="submit"]:hover{
+
+    background-color: hsl(122, 39%, 40%);
+
+}
