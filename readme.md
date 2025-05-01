@@ -1,0 +1,11 @@
+# Daily Forecast 
+
+Live page:
+
+GitHub:
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6391588c-0ff1-4c65-a822-43fb5854ab73/deploy-status)](https://app.netlify.com/sites/aesthetic-dusk-5d6d31/deploys) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+## About 
+
+## Screenshots 
