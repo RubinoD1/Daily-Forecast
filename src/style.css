@@ -79,3 +79,43 @@ button[type="submit"]:hover{
     background-color: hsl(122, 39%, 40%);
 
 }
+
+/* forecast card parent */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(183deg, hsl(230, 62%, 77%), hsl(36.52deg 91.34% 56.23%));
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+
+    min-width: 300px;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+/* forecast city name */
+/* .cityName {
+
+} */
+
+.cityName, .temp {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+/* weather icon */
+.weatherIcon {
+    font-size: 7.5rem;
+    margin: 0;
+    width: 100%; height: auto;
+}
+
+/* weather icon description */
+/* .descDisplay {
+    font-style: italic;
+} */
