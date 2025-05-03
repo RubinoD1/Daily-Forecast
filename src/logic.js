@@ -1,11 +1,12 @@
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
+const main = document.querySelector(".card")
 
 weatherForm.addEventListener("submit", async event => {
-      //prevents page refresh
-      event.preventDefault();
-      //location is used as a query parameter =?${} value that is passed into the api call
-      let location = cityInput.value.trim();
+    //prevents page refresh
+    event.preventDefault();
+    //location is used as a query parameter =?${} value that is passed into the api call
+    let location = cityInput.value.trim();
 
       if(location){
           try{
@@ -50,5 +51,67 @@ weatherForm.addEventListener("submit", async event => {
 
 
 function weatherToday(data){
-  console.log(data, " weather data");
+
+  const {
+    name: name,
+    main: {temp, feels_like, humidity},
+    weather: [{description, icon}],
+    wind: {speed}
+  } = data;
+
+//   console.log(name, " name");
+//   console.log(temp, feels_like, humidity, " main values");
+//   console.log(description, icon, " weather");
+//   console.log(speed, " wind");
+
+// if weather card already exists the empty string will reset it 
+main.textContent = "";
+// make main card visible by removing display: none property 
+main.style.display = "flex";
+
+//create child elements that willl display weather values 
+const cityInfo = document.createElement("h1");
+const tempInfo = document.createElement("p");
+const feelsLikeInfo = document.createElement("p");
+const humidityInfo = document.createElement("p");  
+const windInfo = document.createElement("p");  
+const descDisplayInfo = document.createElement("p");  
+const weatherIconInfo = document.createElement("img");
+
+//set created elements text content 
+cityInfo.textContent = name;
+//convert Kelvin temperature to Ferenheit and set text content
+tempInfo.textContent = `${temp}°F`;
+feelsLikeInfo.textContent = `${feels_like}°F`;
+humidityInfo.textContent = `Humidity: ${humidity}%`;
+windInfo.textContent = `Wind Speed: ${speed} mph`;
+descDisplayInfo.textContent = description;
+// weather icon 
+//weatherIconInfo.textContent = weatherIcon(icon);
+
+//add CSS classes to elements 
+cityInfo.classList.add("cityName");
+tempInfo.classList.add("temp");
+feelsLikeInfo.classList.add("feelsLike");
+humidityInfo.classList.add("humidity");
+windInfo.classList.add("wind");
+descDisplayInfo.classList.add("descDisplay");
+weatherIconInfo.classList.add("weatherIcon");
+
+// append children elements to parent 
+//  main.appendChild(cityDisplay);
+main.appendChild(cityInfo);
+main.appendChild(tempInfo);
+main.appendChild(feelsLikeInfo);
+main.appendChild(humidityInfo);
+main.appendChild(windInfo);
+main.appendChild(descDisplayInfo);
+main.appendChild(weatherIconInfo);
+
+  
+}
+
+// set weather icon based on weather code 
+function weatherIcon(icon){
+  
 }
