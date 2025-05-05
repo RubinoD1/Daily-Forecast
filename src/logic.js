@@ -59,11 +59,6 @@ function weatherToday(data){
     wind: {speed}
   } = data;
 
-//   console.log(name, " name");
-//   console.log(temp, feels_like, humidity, " main values");
-//   console.log(description, icon, " weather");
-//   console.log(speed, " wind");
-
 // if weather card already exists the empty string will reset it 
 main.textContent = "";
 // make main card visible by removing display: none property 
@@ -98,8 +93,7 @@ windInfo.classList.add("wind");
 descDisplayInfo.classList.add("descDisplay");
 weatherIconInfo.classList.add("weatherIcon");
 
-// append children elements to parent 
-//  main.appendChild(cityDisplay);
+// append child elements to parent 
 main.appendChild(cityInfo);
 main.appendChild(tempInfo);
 main.appendChild(feelsLikeInfo);
@@ -108,10 +102,11 @@ main.appendChild(windInfo);
 main.appendChild(descDisplayInfo);
 main.appendChild(weatherIconInfo);
 
-  
 }
 
 // set weather icon based on weather code 
 function weatherIcon(icon){
-  
+// document.getElementById("today-icon").src=`../images/icons/${dataCurrent.weather[0].icon}.svg`; //weather icon
+
+
 }
