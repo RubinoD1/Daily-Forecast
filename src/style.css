@@ -86,7 +86,9 @@ button[type="submit"]:hover{
     flex-direction: column;
     align-items: center;
 
-    background: linear-gradient(183deg, hsl(230, 62%, 77%), hsl(36.52deg 91.34% 56.23%));
+    /* background: linear-gradient(183deg, hsl(230, 62%, 77%), hsl(36.52deg 91.34% 56.23%)); */
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
