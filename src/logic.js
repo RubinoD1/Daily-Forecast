@@ -75,14 +75,13 @@ const weatherIconInfo = document.createElement("img");
 
 //set created elements text content 
 cityInfo.textContent = name;
-//convert Kelvin temperature to Ferenheit and set text content
 tempInfo.textContent = `${temp}°F`;
 feelsLikeInfo.textContent = `${feels_like}°F`;
 humidityInfo.textContent = `Humidity: ${humidity}%`;
 windInfo.textContent = `Wind Speed: ${speed} mph`;
 descDisplayInfo.textContent = description;
-// weather icon 
-//weatherIconInfo.textContent = weatherIcon(icon);
+// weather icon src
+weatherIconInfo.src = `./assets/images/icons/${icon}.svg`;
 
 //add CSS classes to elements 
 cityInfo.classList.add("cityName");
@@ -104,9 +103,3 @@ main.appendChild(weatherIconInfo);
 
 }
 
-// set weather icon based on weather code 
-function weatherIcon(icon){
-// document.getElementById("today-icon").src=`../images/icons/${dataCurrent.weather[0].icon}.svg`; //weather icon
-
-
-}
