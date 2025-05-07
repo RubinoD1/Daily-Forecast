@@ -87,8 +87,8 @@ button[type="submit"]:hover{
     align-items: center;
 
     /* background: linear-gradient(183deg, hsl(230, 62%, 77%), hsl(36.52deg 91.34% 56.23%)); */
-    background: #EEAECA;
-    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /* background: #EEAECA; */
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 90%) 100%);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
@@ -120,3 +120,28 @@ button[type="submit"]:hover{
 /* .descDisplay {
     font-style: italic;
 } */
+
+
+
+/* MEDIA BREAK POINTS */
+/* Small devices (portrait tablets and large phones  */
+/* @media (max-width: 400px){
+    h1{
+        font-size: 1.5em;
+    }
+    
+    table {
+        font-size: 60px;
+    }   
+
+} */
+
+/* Middle range between small and medium devices */
+/* @media (min-width: 401px) and (max-width: 507px) {
+
+}  */
+
+/* Medium devices (landscape tablets, 477px and up) */
+/* @media (min-width: 508px) and (max-width: 938px) {
+
+}  */
