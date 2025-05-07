@@ -37,14 +37,14 @@ weatherForm.addEventListener("submit", async event => {
       
           catch(error){
               console.log("error");
-              
-              console.error(error);
+              //console.error(error);
+              errorMessage(error);
           }
 
       }
       else {//If no value pass on an error message
-          console.log("Please enter a city");
-          
+          //console.log("Please enter a city");
+          errorMessage("Enter a city name")
       }
 
 });
@@ -103,3 +103,20 @@ main.appendChild(weatherIconInfo);
 
 }
 
+// display error message
+function errorMessage(message){
+     
+    const errorDisplay = document.createElement("p");
+   
+    errorDisplay.textContent = message;
+
+    errorDisplay.classList.add("errorMessage");
+
+
+
+    main.textContent = "";
+    //display is set to none the flex property will display the card with the error message
+    main.style.display = "flex";
+
+    main.appendChild(errorDisplay);
+}
