@@ -1,3 +1,20 @@
+html { 
+    /* bg image properties */
+    background: url("./assets/images/pexels-ryutaro-6249515.jpg") no-repeat center center fixed; 
+    /* Apple extension property specifies the size of the background images. 
+    It is only supported in Safari 3.0 or lower. New versions of Safari should support the background-size property.  */
+    -webkit-background-size: cover;
+    /* Mozilla extension property specifies the size of the background images. 
+    It is only supported in Gecko 1.9.2 (Firefox 3.6) or lower. New versions of Gecko support the background-size property.  */
+    -moz-background-size: cover;
+    /*  Opera extension property specifies the size of the background images. 
+    It is only supported in Opera 9.5 or lower. New versions of Opera should support the background-size property.  */
+    -o-background-size: cover;
+    
+    background-size: cover;
+
+  }
+
 body{
 
     display: flex;
@@ -6,14 +23,6 @@ body{
 
     align-items: center;
     
-    /* bg image */
-    background: url("./assets/images/pexels-ryutaro-6249515.jpg");
-    
-    background-repeat: no-repeat;
-    
-    height:auto;
-    
-    background-size: cover;
 }
 
 
@@ -38,10 +47,6 @@ body{
 
     font-weight: bold;
 
-    border: 5px solid #000000;
-
-    border-radius: 10px;
-
     margin: 10px;
 
     width: 300px;
@@ -50,7 +55,6 @@ body{
 
 }
 
-/* Select all buttons where the attribute equals submit */
 button[type="submit"]{
 
     padding: 10px 20px;
@@ -63,13 +67,16 @@ button[type="submit"]{
 
     color: white;
     
-    /* cityInput and btn shar repeat properties */
-    border: 5px solid black;
-    border-radius: 10px;
-    
     /* When we hover our cursor over the button */
     cursor: pointer;
 
+}
+
+.cityInput, button[type="submit"] {
+    
+    border: 5px solid black;
+    
+    border-radius: 10px;
 }
 
 button[type="submit"]:hover{
@@ -80,99 +87,98 @@ button[type="submit"]:hover{
 
 /* forecast card parent */
 .card {
+   
     display: flex;
+   
     flex-direction: column;
+   
     align-items: center;
 
-    /* background: linear-gradient(183deg, hsl(230, 62%, 77%), hsl(36.52deg 91.34% 56.23%)); */
-    /* background: #EEAECA; */
     background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 90%) 100%);
+   
     padding: 30px;
+   
     border-radius: 10px;
+   
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
 
     min-width: 300px;
 
     font-family: Arial, sans-serif;
+   
     font-weight: bold;
 
 }
 
-/* forecast city name */
-/* .cityName {
-
-} */
-
 .cityName, .temp {
+   
     font-size: 2.5rem;
+   
     margin-bottom: 25px;
+
 }
 
 /* weather icon */
 .weatherIcon {
+    
     margin: 0;
+    
     width: 100%; height: auto;
-}
 
-/* weather icon description */
-/* .descDisplay {
-    font-style: italic;
-} */
+}
 
 .errorMessage {
+   
     font-size: 2.5rem;
+   
     font-weight: bold;
+   
     color: hsla(0, 0%, 0%, 0.75);
+
 }
-
-
-
-
-
-
-
 
 
 /* MEDIA BREAK POINTS */
-/* Small devices (portrait tablets and large phones  */
 @media (max-width: 330px) {
-    /* lower font sizes for search button and box */
     .cityInput {
+       
         width: 250px;
+
     }
 }
 
-
 @media (max-width: 400px){
     .card {
+       
         padding: 0px;
+
     } 
 
     .weatherIcon {
+        
         width: 82%;
+
     }
 
     .cityInput, button[type="submit"]{   
+        
         font-size: 1.5rem;    
+        
     }
 
 }
 
 @media (max-width: 586px){
     .weatherForm {
+        
         display: flex;
+        
         flex-direction: column;
+        
         align-items: center;
+        
         margin: 10px;
+
     }
 }
 
-/* Middle range between small and medium devices */
-/* @media (min-width: 401px) and (max-width: 507px) {
-
-}  */
-
-/* Medium devices (landscape tablets, 477px and up) */
-/* @media (min-width: 508px) and (max-width: 938px) {
-
-}  */
