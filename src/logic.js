@@ -7,6 +7,8 @@ weatherForm.addEventListener("submit", async event => {
     event.preventDefault();
     //location is used as a query parameter =?${} value that is passed into the api call
     let location = cityInput.value.trim();
+    //clear search box
+    cityInput.value = "";
 
       if(location){
           try{
@@ -76,12 +78,14 @@ const weatherIconInfo = document.createElement("img");
 //set created elements text content 
 cityInfo.textContent = name;
 tempInfo.textContent = `${temp}°F`;
-feelsLikeInfo.textContent = `${feels_like}°F`;
+feelsLikeInfo.textContent = `Feels Like: ${feels_like}°F`;
 humidityInfo.textContent = `Humidity: ${humidity}%`;
 windInfo.textContent = `Wind Speed: ${speed} mph`;
 descDisplayInfo.textContent = description;
 // weather icon src
 weatherIconInfo.src = `./assets/images/icons/${icon}.svg`;
+// Weather icon alt
+weatherIconInfo.alt = `${description} weather icon`;
 
 //add CSS classes to elements 
 cityInfo.classList.add("cityName");

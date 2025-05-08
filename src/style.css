@@ -13,8 +13,6 @@ body{
     
     height:auto;
     
-    background-repeat: no-repeat;
-    
     background-size: cover;
 }
 
@@ -137,16 +135,37 @@ button[type="submit"]:hover{
 
 /* MEDIA BREAK POINTS */
 /* Small devices (portrait tablets and large phones  */
-/* @media (max-width: 400px){
-    h1{
-        font-size: 1.5em;
+@media (max-width: 330px) {
+    /* lower font sizes for search button and box */
+    .cityInput {
+        width: 250px;
     }
-    
-    table {
-        font-size: 60px;
-    }   
+}
 
-} */
+
+@media (max-width: 400px){
+    .card {
+        padding: 0px;
+    } 
+
+    .weatherIcon {
+        width: 82%;
+    }
+
+    .cityInput, button[type="submit"]{   
+        font-size: 1.5rem;    
+    }
+
+}
+
+@media (max-width: 586px){
+    .weatherForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+}
 
 /* Middle range between small and medium devices */
 /* @media (min-width: 401px) and (max-width: 507px) {
