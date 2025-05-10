@@ -65,16 +65,15 @@ button[type="submit"]{
 
     background-color: #4e4eb1;
 
-    color: white;
+    color: #ffffff;
     
-    /* When we hover our cursor over the button */
     cursor: pointer;
 
 }
 
 .cityInput, button[type="submit"] {
     
-    border: 5px solid black;
+    border: 5px solid #000000;
     
     border-radius: 10px;
 }
