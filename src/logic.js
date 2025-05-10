@@ -10,45 +10,35 @@ weatherForm.addEventListener("submit", async event => {
     //clear search box
     cityInput.value = "";
 
-      if(location){
+      if(location){ //if there is a value this will be true 
           try{
-
-              //await response (retriving data)
+              //await response (retrieving data)
               const response = await fetch(`/.netlify/functions/fetch-weather?search=${location}`);
       
-              //once the response has been resolved we check its staus 
-              //if response is NOT okay throw an error message 
-       
-              //once the response has been resolved we check its staus 
-      
-              //if response is NOT okay throw an error message 
-              if(!response.ok){
+              //once the response has been resolved we check its status 
+              if(!response.ok){ //if response is NOT okay throw an error message 
       
                   throw new Error("Could not fetch resource");
       
               }
-      
               //if response IS okay 
       
               //covert our response to JSON -- Also returns a promise that is why we are using await
               const data = await response.json();
-      
+              //pass response data to weatherToday function
               weatherToday(data);
       
           }
-      
+          //error response if api call fails
           catch(error){
-              console.log("error");
               //console.error(error);
               errorMessage(error);
           }
 
       }
-      else {//If no value pass on an error message
-          //console.log("Please enter a city");
+      else {//If no value is entered in search 
           errorMessage("Enter a city name")
       }
-
 });
 
 
@@ -111,15 +101,12 @@ main.appendChild(weatherIconInfo);
 function errorMessage(message){
      
     const errorDisplay = document.createElement("p");
-   
     errorDisplay.textContent = message;
-
     errorDisplay.classList.add("errorMessage");
-
-
-
+    
+    // if weather card already exists the empty string will reset it 
     main.textContent = "";
-    //display is set to none the flex property will display the card with the error message
+   // make main card visible by removing display: none property 
     main.style.display = "flex";
 
     main.appendChild(errorDisplay);
