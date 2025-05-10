@@ -1,10 +1,15 @@
 # Daily Forecast 
 
-<img style="float: right;" src="./src/assets/images/Daily forecast.png">
+<p align="center">
+  <img src="./src/assets/images/Daily forecast.png" />
+</p>
+
+
+<!-- <img style="float: right;" src="./src/assets/images/Daily forecast.png"> -->
 
 Live page:
 
-GitHub: https://github.com/RubinoD1/Weather-API
+GitHub: https://github.com/RubinoD1/Daily-Forecast
 
 
 **UPDATE WITH DEPLOYED ICON**
@@ -38,18 +43,12 @@ The site is deployed on Netlify and makes use of the Netlify serverless function
 
 ## Screenshots 
 
-<!-- ![Home Page](./src/assets/images/screenshots/Home%20page.png) -->
-<img style="float: right;" src="./src/assets/images/screenshots/Home page.png">
+![Home Page](./src/assets/images/screenshots/Home%20page.png)
 <!-- &nbsp; adds space between images -->
 &nbsp;
-
-<!-- ![Tokyo Forecast](./src/assets/images/screenshots/Tokyo%20forecast.png) -->
-<img style="float: right;" src="./src/assets/images/screenshots/Tokyo%20forecast.png">
+![Tokyo Forecast](./src/assets/images/screenshots/Tokyo%20forecast.png)
 &nbsp;
-
-<!-- ![Welland Forecast](./src/assets/images/screenshots/Welland%20forecast.png) -->
-<img style="float: right;" src="./src/assets/images/screenshots/Welland%20forecast.png">
+![Welland Forecast](./src/assets/images/screenshots/Welland%20forecast.png)
 &nbsp;
+![London Forecast](./src/assets/images/screenshots/London%20forecast.png) 
 
-<!-- ![London Forecast](./src/assets/images/screenshots/London%20forecast.png) --> 
-<img style="float: right;" src="./src/assets/images/screenshots/London%20forecast.png">
